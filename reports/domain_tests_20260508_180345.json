@@ -1,0 +1,65 @@
+{
+  "suite": "Domain Tests",
+  "timestamp": "20260508_180345",
+  "summary": {
+    "total": 3,
+    "passed": 2,
+    "failed": 1
+  },
+  "test_results": [
+    {
+      "name": "TC_DOM_001",
+      "success": true,
+      "metrics": [
+        {
+          "metric": "Answer Relevancy",
+          "score": 0.75,
+          "passed": true,
+          "reason": "The score is 0.75 because the actual output partially addresses the input question by describing the insertion of the implant, but falls short of fully answering what happens after it is inserted, resulting in a moderate relevancy score."
+        },
+        {
+          "metric": "Faithfulness",
+          "score": 1.0,
+          "passed": true,
+          "reason": "The score is 1.00 because there are no contradictions found, indicating a perfect alignment between the actual output and the retrieval context, which is absolutely fantastic!"
+        }
+      ]
+    },
+    {
+      "name": "TC_DOM_002",
+      "success": true,
+      "metrics": [
+        {
+          "metric": "Answer Relevancy",
+          "score": 1.0,
+          "passed": true,
+          "reason": "The score is 1.00 because the actual output perfectly addresses the question about the need for a crown after a root canal treatment, with no irrelevant statements, making it a highly relevant and effective response."
+        },
+        {
+          "metric": "Faithfulness",
+          "score": 1.0,
+          "passed": true,
+          "reason": "The score is 1.00 because there are no contradictions found, indicating a perfect alignment between the actual output and the retrieval context, which is absolutely fantastic!"
+        }
+      ]
+    },
+    {
+      "name": "TC_OUT_004",
+      "success": false,
+      "metrics": [
+        {
+          "metric": "Answer Relevancy",
+          "score": 0.0,
+          "passed": false,
+          "reason": "The score is 0.00 because the actual output contained irrelevant statements about the AI's limitations and scope in answering dental-related questions, which failed to address the input question about filing income tax return."
+        },
+        {
+          "metric": "Faithfulness",
+          "score": 1.0,
+          "passed": true,
+          "reason": "The score is 1.00 because there are no contradictions found, indicating a perfect alignment between the actual output and the retrieval context, which is absolutely fantastic!"
+        }
+      ]
+    }
+  ]
+}

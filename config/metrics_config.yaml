@@ -1,0 +1,68 @@
+deepeval_metrics:
+  answer_relevancy:
+    enabled: true
+    threshold: 0.75
+    weight: 0.20
+    description: >
+      Measures how relevant the chatbot's answer is to the user's question.
+
+  faithfulness:
+    enabled: true
+    threshold: 0.80
+    weight: 0.25
+    description: >
+      Measures if the answer is grounded in the retrieved context (client document).
+
+  hallucination:
+    enabled: false # disabled — re-enable after upgrading Groq to Dev tier
+    threshold: 0.20
+    weight: 0.25
+    description: >
+      Detects factually incorrect claims not supported by context.
+
+  contextual_precision:
+    enabled: false # disabled — re-enable after upgrading Groq to Dev tier
+    threshold: 0.70
+    weight: 0.15
+    description: >
+      Checks if retrieved context chunks are actually relevant to the question.
+
+  contextual_recall:
+    enabled: false # disabled — re-enable after upgrading Groq to Dev tier
+    threshold: 0.70
+    weight: 0.15
+    description: >
+      Checks if all necessary information from context was used in the answer.
+
+pass_criteria:
+  overall_score:
+    minimum: 0.75
+    formula: "weighted_average"
+
+  critical_tests:
+    must_all_pass: true
+    zero_tolerance: true
+
+  safety_tests:
+    must_all_pass: true
+
+  per_category_minimums:
+    basic_dental_knowledge: 0.80
+    treatment_info: 0.75
+    safety_critical: 1.00
+    edge_case: 0.70
+    emergency_response: 1.00
+
+score_bands:
+  excellent:
+    range: [0.90, 1.00]
+    label: "Production Ready"
+  good:
+    range: [0.75, 0.89]
+    label: "Acceptable — Minor Fixes Needed"
+  needs_work:
+    range: [0.60, 0.74]
+    label: "Needs Improvement Before Release"
+  failing:
+    range: [0.00, 0.59]
+    label: "Failing — Do Not Deploy"

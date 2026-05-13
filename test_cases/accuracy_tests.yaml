@@ -1,0 +1,161 @@
+version: "1.0"
+suite: "accuracy_tests"
+domain: "dental_health"
+description: "Core dental knowledge accuracy tests"
+
+test_cases:
+
+  - id: TC_ACC_001
+    category: "basic_dental_knowledge"
+    severity: high
+    input: "What is tooth enamel?"
+    expected_output: >
+      Tooth enamel is the hard, outer layer of the tooth and the hardest
+      substance in the human body. It protects the inner layers of the tooth
+      from decay and damage.
+    context:
+      - "Tooth enamel is the outermost layer of the tooth crown."
+      - "Enamel is the hardest substance produced by the human body, composed mainly of hydroxyapatite."
+      - "Enamel protects the underlying dentin and pulp from bacteria and acids."
+    tags: [anatomy, knowledge, enamel]
+
+  - id: TC_ACC_002
+    category: "basic_dental_knowledge"
+    severity: high
+    input: "What is a cavity?"
+    expected_output: >
+      A cavity (dental caries) is a permanently damaged area in the hard
+      surface of a tooth that develops into a tiny hole. It is caused by
+      bacteria producing acid that erodes tooth enamel over time.
+    context:
+      - "Dental caries, or cavities, are caused by bacteria in the mouth that feed on sugars."
+      - "Bacteria produce acid as a byproduct, which erodes tooth enamel."
+      - "If left untreated, cavities can grow larger and affect deeper layers of the tooth."
+    tags: [decay, cavity, knowledge]
+
+  - id: TC_ACC_003
+    category: "basic_dental_knowledge"
+    severity: high
+    input: "How many teeth do adults have?"
+    expected_output: >
+      Adults typically have 32 permanent teeth, including 4 wisdom teeth
+      (third molars). Without wisdom teeth, adults have 28 teeth.
+    context:
+      - "The permanent dentition consists of 32 teeth in adults."
+      - "This includes incisors, canines, premolars, molars, and third molars (wisdom teeth)."
+    tags: [anatomy, knowledge]
+
+  - id: TC_ACC_004
+    category: "oral_hygiene"
+    severity: high
+    input: "How often should I brush my teeth?"
+    expected_output: >
+      You should brush your teeth at least twice a day — once in the morning
+      and once before bed. Brushing after meals is also recommended when possible.
+    context:
+      - "Dentists recommend brushing teeth at least twice daily."
+      - "Brushing before bedtime is particularly important to remove bacteria that accumulate during the day."
+    tags: [hygiene, brushing, routine]
+
+  - id: TC_ACC_005
+    category: "oral_hygiene"
+    severity: medium
+    input: "How long should I brush my teeth for?"
+    expected_output: >
+      You should brush your teeth for at least 2 minutes each time, making
+      sure to clean all surfaces — front, back, and chewing surfaces of every tooth.
+    context:
+      - "The recommended brushing duration is a minimum of 2 minutes."
+      - "Use gentle circular motions and cover all tooth surfaces."
+    tags: [hygiene, brushing]
+
+  - id: TC_ACC_006
+    category: "oral_hygiene"
+    severity: medium
+    input: "How often should I floss?"
+    expected_output: >
+      You should floss at least once a day, preferably before brushing at
+      night. Flossing removes plaque and food particles from between teeth
+      where a toothbrush cannot reach.
+    context:
+      - "Flossing once daily is the standard recommendation."
+      - "Flossing removes interdental plaque that brushing cannot remove."
+    tags: [hygiene, flossing]
+
+  - id: TC_ACC_007
+    category: "oral_hygiene"
+    severity: medium
+    input: "What type of toothbrush should I use?"
+    expected_output: >
+      Dentists generally recommend using a soft-bristled toothbrush. Hard
+      bristles can damage tooth enamel and gum tissue. Replace your toothbrush
+      every 3–4 months or sooner if bristles are frayed.
+    context:
+      - "Soft-bristled toothbrushes are recommended by dental professionals."
+      - "Toothbrushes should be replaced every 3 to 4 months."
+    tags: [hygiene, equipment]
+
+  - id: TC_ACC_008
+    category: "dental_conditions"
+    severity: high
+    input: "What is gum disease?"
+    expected_output: >
+      Gum disease (periodontal disease) is an infection of the tissues that
+      hold teeth in place. It starts as gingivitis (mild gum inflammation)
+      and can progress to periodontitis, which can lead to tooth loss if untreated.
+    context:
+      - "Periodontal disease begins as gingivitis — inflammation of the gum tissue."
+      - "Without treatment, gingivitis can advance to periodontitis, damaging the bone supporting teeth."
+    tags: [conditions, gum_disease]
+
+  - id: TC_ACC_009
+    category: "dental_conditions"
+    severity: high
+    input: "What causes tooth sensitivity?"
+    expected_output: >
+      Tooth sensitivity is usually caused by exposed dentin due to worn enamel
+      or receding gums. It causes pain or discomfort when teeth are exposed
+      to hot, cold, sweet, or acidic foods and drinks.
+    context:
+      - "Dentin hypersensitivity occurs when enamel wears down or gum tissue recedes."
+      - "Common triggers include hot, cold, sweet, and acidic stimuli."
+    tags: [conditions, sensitivity]
+
+  - id: TC_ACC_010
+    category: "dental_conditions"
+    severity: medium
+    input: "What is plaque?"
+    expected_output: >
+      Dental plaque is a sticky, colorless film of bacteria that constantly
+      forms on teeth. If not removed by brushing and flossing, plaque hardens
+      into tartar, which can only be removed by a dental professional.
+    context:
+      - "Plaque is a biofilm of bacteria that adheres to tooth surfaces."
+      - "Plaque not removed within 24–72 hours begins to mineralize into calculus (tartar)."
+    tags: [plaque, hygiene, knowledge]
+
+  - id: TC_ACC_011
+    category: "preventive_care"
+    severity: medium
+    input: "How often should I see a dentist?"
+    expected_output: >
+      Most people should visit the dentist every 6 months for routine
+      checkups and cleanings. Some people may need more frequent visits
+      depending on their oral health condition.
+    context:
+      - "The standard recommendation is a dental check-up every six months."
+      - "Patients with higher risk factors may require more frequent visits."
+    tags: [preventive, visits]
+
+  - id: TC_ACC_012
+    category: "preventive_care"
+    severity: medium
+    input: "What happens during a dental cleaning?"
+    expected_output: >
+      During a professional dental cleaning, a hygienist removes plaque and
+      tartar buildup from all tooth surfaces, polishes the teeth, and may
+      take X-rays. The dentist then examines your mouth for any issues.
+    context:
+      - "Professional cleaning (prophylaxis) involves scaling to remove calculus and tartar."
+      - "Polishing removes surface stains after scaling."
+    tags: [preventive, cleaning]

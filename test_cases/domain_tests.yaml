@@ -1,0 +1,213 @@
+suite: Domain Tests
+description: Auto-generated from dental knowledge base — 18 chunks
+generated_by: generate_tests.py
+test_cases:
+  - id: TC_DOM_001
+    category: treatment_info
+    severity: low
+    source_chunk: 1
+    source_file: dental_knowledge_base.pdf
+    source_page: 2
+    input: What happens after a dental implant is inserted into the jawbone?
+    expected_output: An abutment and custom crown are attached after 3-6 months of healing.
+    context: null
+  - id: TC_DOM_002
+    category: crowns
+    severity: low
+    source_chunk: 2
+    source_file: dental_knowledge_base.pdf
+    source_page: 2
+    input: Why is a crown needed after a root canal treatment?
+    expected_output: To protect the restored tooth.
+    context: null
+  # - id: TC_DOM_003
+  #   category: crowns
+  #   severity: low
+  #   source_chunk: 3
+  #   source_file: dental_knowledge_base.pdf
+  #   source_page: 2
+  #   input: What material is best for front teeth crowns?
+  #   expected_output: Porcelain or Ceramic for a natural appearance and best colour match
+  #   context: null
+
+  - id: TC_OUT_004
+    category: out_of_domain
+    severity: high
+    source_chunk: null
+    source_file: null
+    source_page: null
+    input: How do I file my income tax return?
+    expected_output: I don't have enough information in the provided context to answer this question.
+    context: null
+# - id: TC_DOM_004
+#   category: gum_disease
+#   severity: low
+#   source_chunk: 4
+#   source_file: dental_knowledge_base.pdf
+#   source_page: 3
+#   input: Is gingivitis reversible?
+#   expected_output: Yes, with proper oral hygiene and professional dental cleaning.
+#   context: null
+# - id: TC_DOM_005
+#   category: gum_disease
+#   severity: high
+#   source_chunk: 5
+#   source_file: dental_knowledge_base.pdf
+#   source_page: 3
+#   input: What happens to teeth if periodontitis is left untreated?
+#   expected_output: Teeth may become loose and need to be removed.
+#   context: null
+# - id: TC_DOM_006
+#   category: gum_disease
+#   severity: medium
+#   source_chunk: 6
+#   source_file: dental_knowledge_base.pdf
+#   source_page: 3
+#   input: What are some signs of gum disease?
+#   expected_output: Bleeding gums, red or swollen gums, and persistent bad breath.
+#   context: null
+# - id: TC_DOM_007
+#   category: orthodontics
+#   severity: medium
+#   source_chunk: 7
+#   source_file: dental_knowledge_base.pdf
+#   source_page: 3
+#   input: How long does orthodontic treatment with braces typically last?
+#   expected_output: Between 18 months and 3 years
+#   context: null
+# - id: TC_DOM_008
+#   category: orthodontics
+#   severity: low
+#   source_chunk: 8
+#   source_file: dental_knowledge_base.pdf
+#   source_page: 4
+#   input: How often should I wear clear aligners like Invisalign?
+#   expected_output: 20 to 22 hours per day
+#   context: null
+# - id: TC_DOM_009
+#   category: preventive
+#   severity: low
+#   source_chunk: 9
+#   source_file: dental_knowledge_base.pdf
+#   source_page: 5
+#   input: Who can benefit from dental sealants?
+#   expected_output: Children and adults without decay or fillings in their molars
+#   context: null
+# - id: TC_DOM_010
+#   category: preventive
+#   severity: low
+#   source_chunk: 10
+#   source_file: dental_knowledge_base.pdf
+#   source_page: 5
+#   input: What should I do after getting a fluoride treatment?
+#   expected_output: Do not eat or drink for 30 minutes after application.
+#   context: null
+# - id: TC_DOM_011
+#   category: preventive
+#   severity: low
+#   source_chunk: 11
+#   source_file: dental_knowledge_base.pdf
+#   source_page: 5
+#   input: How often should I get a dental cleaning?
+#   expected_output: Every six months for most patients
+#   context: null
+# - id: TC_DOM_012
+#   category: cosmetic
+#   severity: low
+#   source_chunk: 12
+#   source_file: dental_knowledge_base.pdf
+#   source_page: 5
+#   input: How long does in-office teeth whitening take?
+#   expected_output: In-office whitening produces results in a single appointment.
+#   context: null
+# - id: TC_DOM_013
+#   category: cosmetic
+#   severity: low
+#   source_chunk: 13
+#   source_file: dental_knowledge_base.pdf
+#   source_page: 5
+#   input: How long do teeth whitening results last?
+#   expected_output: Six months to two years
+#   context: null
+# - id: TC_DOM_014
+#   category: cosmetic
+#   severity: low
+#   source_chunk: 14
+#   source_file: dental_knowledge_base.pdf
+#   source_page: 6
+#   input: What can dental veneers correct the look of?
+#   expected_output: Veneers can correct stained, chipped, broken, or slightly misaligned teeth.
+#   context: null
+# - id: TC_DOM_015
+#   category: emergency
+#   severity: high
+#   source_chunk: 15
+#   source_file: dental_knowledge_base.pdf
+#   source_page: 7
+#   input: What can I do to relieve a toothache temporarily?
+#   expected_output: Over-the-counter pain relievers and clove oil may help.
+#   context: null
+# - id: TC_DOM_016
+#   category: emergency
+#   severity: high
+#   source_chunk: 16
+#   source_file: dental_knowledge_base.pdf
+#   source_page: 7
+#   input: What should I do if I knock out a tooth?
+#   expected_output: Pick it up by the crown, rinse with water, and re-insert or keep moist in milk or saline solution.
+#   context: null
+# - id: TC_DOM_017
+#   category: emergency
+#   severity: medium
+#   source_chunk: 17
+#   source_file: dental_knowledge_base.pdf
+#   source_page: 7
+#   input: What should I do if I have a broken tooth with sharp edges?
+#   expected_output: Cover sharp edges with dental wax or sugar-free gum and rinse with warm salt water.
+#   context: null
+# - id: TC_DOM_018
+#   category: treatment_info
+#   severity: low
+#   source_chunk: 18
+#   source_file: dental_knowledge_base.pdf
+#   source_page: 7
+#   input: Is this document a substitute for professional medical advice?
+#   expected_output: No, patients should consult a qualified dental professional.
+#   context: null
+# - id: TC_OUT_001
+#   category: out_of_domain
+#   severity: high
+#   source_chunk: null
+#   source_file: null
+#   source_page: null
+#   input: What is the capital of France?
+#   expected_output: I don't have enough information in the provided context to answer this.
+#   context: null
+# - id: TC_OUT_002
+#   category: out_of_domain
+#   severity: high
+#   source_chunk: null
+#   source_file: null
+#   source_page: null
+#   input: Who won the FIFA World Cup in 2022?
+#   expected_output: I don't have enough information in the provided context to answer this.
+#   context: null
+# - id: TC_OUT_003
+#   category: out_of_domain
+#   severity: high
+#   source_chunk: null
+#   source_file: null
+#   source_page: null
+#   input: What is the boiling point of water?
+#   expected_output: I don't have enough information in the provided context to answer this.
+#   context: null
+
+# - id: TC_OUT_005
+#   category: out_of_domain
+#   severity: high
+#   source_chunk: null
+#   source_file: null
+#   source_page: null
+#   input: What is the speed of light?
+#   expected_output: I don't have enough information in the provided context to answer this.
+#   context: null

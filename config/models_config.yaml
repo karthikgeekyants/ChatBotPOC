@@ -1,0 +1,16 @@
+providers:
+  groq:
+    api_key_env: "GROQ_API_KEY"
+    base_url: "https://api.groq.com/openai/v1"
+    models:
+      - id: "llama-3.1-8b-instant"
+        context_window: 131072
+        recommended_for: ["chatbot", "judge"]
+      - id: "llama-3.3-70b-versatile"
+        context_window: 131072
+        recommended_for: ["chatbot", "judge"] # smarter, still free
+
+  openai:
+    api_key_env: "OPENAI_API_KEY"
+    base_url: "https://api.openai.com/v1"
+    models: []
